@@ -1,0 +1,96 @@
+html{
+    animation: anim3 500ms infinite alternate;
+}
+#Main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". h ."
+    "g img d"
+    ". b ."
+    
+    ;
+}
+.img{
+    grid-area: img;
+    width: auto;
+    height: auto;
+    animation: anim3 500ms infinite alternate;
+}
+
+.gauche{
+    grid-area: g;
+    background-color: red;
+    animation: anim3 500ms infinite alternate;
+
+}
+.droite{
+    grid-area: d;
+    background-color: blue;
+    animation: anim3 500ms infinite alternate;
+    cursor: default;
+
+}
+.haut{
+    grid-area: h;
+    background-color: green;
+    animation: anim3 500ms infinite alternate;
+    
+
+}
+.bas{
+    grid-area: b;
+    background-color: gold;
+    animation: anim3 500ms infinite alternate;
+
+}
+@keyframes anim1{
+    0%{
+        background-color: red;
+        
+
+    }
+    50%{
+        background-color: blue;
+
+    }
+    100%{
+        background-color: green;
+
+    }
+}
+@keyframes anim2{
+    0%{
+        background-color: red;
+
+    }
+    50%{
+        background-color: blue;
+
+    }
+    100%{
+        background-color: green;
+
+    }
+}
+@keyframes anim3{
+    0%{
+        background-color: green;
+
+    }
+    25%{
+        background-color: greenyellow
+
+    }
+    50%{
+        background-color: purple;
+
+    }
+    75%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: blue;
+    }
+}

@@ -1,0 +1,93 @@
+html{
+    animation: raimbow 2s infinite alternate;
+}
+.test{
+    grid-area: test;
+    background-color: black;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+
+    transition: all 2s;
+    animation: raimbow 50ms infinite alternate;
+}
+.test:hover{
+    transform: translatex(200px);
+    background-color: red;
+
+}
+h1{
+    color: white;
+    animation: raimbow 2s infinite alternate;
+}
+h2{
+    color: white;
+    animation: raimbow 2s infinite alternate;
+}
+p{
+    color: white;
+    animation: raimbow 2s infinite alternate;
+}
+b{
+    color: white;
+    animation: raimbow 2s infinite alternate;
+}
+a{
+    color: black;
+    animation: raimbow 2s infinite alternate;
+}
+@keyframes raimbow{
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: purple;
+    }
+    75%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
+.go_back{
+    grid-area: go_back;
+    background-color: white;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    color: white;
+
+    text-align: center;
+    flex-direction: column;
+    font-size: 2em;
+    animation: raimbow 2s infinite alternate;
+}
+h3{
+    width: 50px;
+    height: 50px;
+}
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "test ."
+    "Liens img"
+    "go_back ."
+
+    ;
+}
+.Liens{
+    grid-area: Liens;
+}
+.img{
+    grid-area: img;
+    
+}
