@@ -7,8 +7,30 @@ html{
     --couleur-2:blue;
 }
 
-    
+@font-face {
+    font-family: "bob";
+    src: url(../american_captain/American_Captain.ttf);
+} 
 
+@keyframes grossir{
+    0%{
+        transform:scaleX(1);
+        transform:scaleY(1);
+    }
+    50%{
+        transform: scaleY(2);
+        transform: scaleX(2);
+        
+    }
+
+    100% {
+        transform:scaleX(1);
+        transform:scaleY(1);
+    }
+}    
+.texte{
+    animation: grossir 2s infinite;
+}
 .test{
     background-color: blue;
     color: white;
@@ -191,4 +213,20 @@ p{
 }
 a:hover{
     stop-color: blueviolet;
+}
+
+.pipboy{
+    
+    display: flex;
+    width: 100%;
+    height: 300px;
+    font-family: "bob";
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,80,4,1) 31%, rgba(0,0,0,1) 58%, rgba(40,80,4,1) 82%, rgba(0,11,13,1) 100%);
+    color: darkgreen;
+    align-items: center;
+    font-size: 2cm;
+    flex-direction: column;
+    text-shadow: 3px 3px black ;
+    
 }
