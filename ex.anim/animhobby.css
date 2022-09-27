@@ -2,6 +2,10 @@ html{
     background-color: black;
 
 }
+:root{
+    --couleur-texte: yellow;
+    --couleur-2:blue;
+}
 
     
 
@@ -15,6 +19,9 @@ html{
 
     transition: all 2s;
     animation: color_change 10s infinite alternate;
+}
+.body{
+    
 }
 .test:hover{
     transform: translatex(200px);
@@ -82,8 +89,10 @@ html{
     display: flex;
     width: 100%;
     height: 100%;
+    
     flex-direction: column;
     align-items: center;
+    text-align: center;
     animation: color_change 2s infinite;
     transition:all 2s;
     transform: translatex(200px);
@@ -169,10 +178,11 @@ html{
     background-color: red;
 }
 h1{
-    color: white;
+    color: var(--couleur-texte);
+
 }
 p{
-    color: white;
+    color: var(--couleur-2);
  
 }
 @keyframes ani{
