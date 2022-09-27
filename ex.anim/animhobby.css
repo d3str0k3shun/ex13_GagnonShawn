@@ -20,9 +20,7 @@ html{
     transition: all 2s;
     animation: color_change 10s infinite alternate;
 }
-.body{
-    
-}
+
 .test:hover{
     transform: translatex(200px);
     background-color: red;
@@ -82,9 +80,12 @@ html{
     flex-direction: column;
     align-items: center;
     
+    
+    
 }
 
 .lien1 :hover{
+    
     visibility: none;
     display: flex;
     width: 100%;
@@ -94,7 +95,7 @@ html{
     align-items: center;
     text-align: center;
     animation: color_change 2s infinite;
-    transition:all 2s;
+    transition:all 4s;
     transform: translatex(200px);
 }
 .lien2{
@@ -119,13 +120,13 @@ html{
     background-color: aqua;
     animation: color_change 2s infinite;
     transition-delay: 50ms;
-    transform: scaleX(2);
+    transform: scaleX(3);
     transition-delay: 50ms;
-    transform: scaleY(2);
+    transform: scaleY(3);
     transition-delay: 50ms;
-    transform: scaleX(2);
+    transform: scaleX(3);
     transition-delay: 50ms;
-    transform: scaleY(2);
+    transform: scaleY(3);
     
 
 
